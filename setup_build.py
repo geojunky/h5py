@@ -43,7 +43,7 @@ FALLBACK_PATHS = {
 }
 
 COMPILER_SETTINGS = {
-   'libraries'      : ['hdf5', 'hdf5_hl'],
+   'libraries'      : ['hdf5_ompi2', 'hdf5_hl_ompi2'],
    'include_dirs'   : [localpath('lzf')],
    'library_dirs'   : [],
    'define_macros'  : [('H5_USE_16_API', None)]

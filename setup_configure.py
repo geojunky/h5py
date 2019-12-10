@@ -203,8 +203,8 @@ def autodetect_version(hdf5_dir=None):
         default_path = 'hdf5.dll'
         regexp = re.compile(r'^hdf5.dll')
     else:
-        default_path = 'libhdf5.so'
-        regexp = re.compile(r'^libhdf5.so')
+        default_path = 'libhdf5_ompi2.so'
+        regexp = re.compile(r'^libhdf5_ompi2.so')
 
     libdirs = ['/usr/local/lib', '/opt/local/lib']
     try:
