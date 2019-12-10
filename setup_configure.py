@@ -43,7 +43,7 @@ def validate_version(s):
     """ Ensure that s contains an X.Y.Z format version string, or ValueError.
     """
     try:
-        tpl = tuple(int(x) for x in s.split('.'))
+        tpl = tuple(int(x.replace('p', '')) for x in s.split('.'))
         if len(tpl) != 3: raise ValueError
     except Exception:
         raise ValueError("HDF5 version string must be in X.Y.Z format")
