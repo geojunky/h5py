@@ -196,7 +196,7 @@ DEF COMPLEX256_SUPPORT = %(complex256_support)s
                 s %= {
                     'mpi': bool(config.mpi),
                     'mpi4py_v2': bool(v2),
-                    'version': tuple(int(x) for x in config.hdf5_version.split('.')),
+                    'version': tuple(int(x.replace('p', '')) for x in config.hdf5_version.split('.')),
                     'complex256_support': hasattr(numpy, 'complex256')
                 }
                 s = s.encode('utf-8')
