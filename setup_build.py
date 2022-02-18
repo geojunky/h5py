@@ -34,7 +34,7 @@ MODULES = ['defs', '_errors', '_objects', '_proxy', 'h5fd', 'h5z',
             'h5pl']
 
 COMPILER_SETTINGS = {
-   'libraries'      : ['hdf5', 'hdf5_hl'],
+   'libraries'      : ['hdf5_ompi3', 'hdf5_hl_ompi3'],
    'include_dirs'   : [localpath('lzf')],
    'library_dirs'   : [],
    'define_macros'  : [('H5_USE_18_API', None),
